@@ -1,0 +1,48 @@
+.c-benefit-details {
+  padding: 32px;
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+
+  &__button {
+    color: var(--color-text-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 14px 19px 15px 24px;
+    background-color: var(--color-primary);
+    border-radius: 200px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .c-benefit-details {
+    padding-bottom: 38px;
+  }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1024px) {
+  .c-benefit-details {
+    padding: 32px 28px 38px 20px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 849px) {
+  .c-benefit-details {
+    padding: 24px;
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .c-benefit-details {
+    padding: 24px 16px;
+  }
+}

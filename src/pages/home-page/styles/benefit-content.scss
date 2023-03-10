@@ -1,10 +1,10 @@
 .c-benefit-content {
+  box-sizing: border-box;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 32px;
-  font-family: "Raleway";
-  color: var(--color-text-primary);
+  gap: 24px;
 
   &__image-box {
     width: 72px;
@@ -13,7 +13,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 24px;
   }
 
   &__image-box--first {
@@ -27,52 +26,21 @@
   &__image-box--third {
     background-color: var(--color-icon-3);
   }
-
-  &__title {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 120%;
-  }
-
-  &__description {
-    color: var(--color-text-secondary);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 140%;
-    margin: 16px 0 24px;
-  }
-
-  &__button {
-    color: var(--color-text-primary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
-    padding: 14px 19px 15px 24px;
-    background-color: var(--color-primary);
-    border-radius: 200px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-  }
-
-  .c-benefit-content__button img svg g path {
-    stroke:black;
-  }
-
-  //   &__button-icon {
-  //     stroke: var(--color-text-primary);
-  //   }
-
-  // //   &__button:hover {
-  // //     color: var(--color-button-hover);
-  // //   }
-
-  //   &__button:hover &__button-icon {
-  //     stroke: var(--color-button-hover);
-  //   }
 }
 
-.c-benefit-content__button:hover .c-benefit-content__button-icon {
-  fill: red;
+@media screen and (max-width: 849px) {
+  .c-benefit-content {
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .c-benefit-content {
+  
+    &__image-box {
+      width: 48px;
+      height: 48px;
+    }
+  }
+  
 }

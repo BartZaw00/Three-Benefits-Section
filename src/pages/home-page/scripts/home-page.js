@@ -1,9 +1,11 @@
 /// Homepage JavaScript File
 /// Here we import all the JavaScript files we need for our homepage.
 
-import '../styles/benefit-section.scss'
+import '../styles/section.scss'
 import '../styles/benefit-box.scss'
 import '../styles/benefit-content.scss'
+import '../styles/benefit-text.scss'
+import '../styles/benefit-details.scss'
 
 import { setupCounter } from '../../../global-scripts/scripts/counter/counter.js'
 
