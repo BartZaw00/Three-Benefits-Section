@@ -5,6 +5,7 @@
 @import "styles/root.scss";
 @import "styles/fonts.scss";
 
+
 p {
   margin: 0;
 }
@@ -19,11 +20,4 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@media screen and (max-width: 499px) {
-  #home-page {
-    justify-content: flex-start;
-    height: 100vh;
-  }
 }
