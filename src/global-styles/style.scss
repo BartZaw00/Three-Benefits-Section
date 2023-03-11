@@ -20,3 +20,10 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (max-width: 499px) {
+  #home-page {
+    justify-content: flex-start;
+    height: 100vh;
+  }
+}

@@ -26,6 +26,10 @@
   &__image-box--third {
     background-color: var(--color-icon-3);
   }
+
+  &__mobile-image {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 849px) {
@@ -36,11 +40,17 @@
 
 @media screen and (max-width: 499px) {
   .c-benefit-content {
-  
     &__image-box {
       width: 48px;
       height: 48px;
     }
+
+    &__image {
+      display: none;
+    }
+
+    &__mobile-image {
+      display: block;
+    }
   }
-  
 }

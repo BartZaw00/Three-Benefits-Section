@@ -20,6 +20,23 @@
     font-size: 12px;
     line-height: 18px;
   }
+
+  &__button-icon-change,
+  &__button:hover &__button-icon {
+    display: none;
+  }
+
+  &__button:hover {
+    color: var(--color-text-button-hover);
+  }
+
+  &__button:hover &__button-icon-change {
+    display: block;
+  }
+
+  &__button:active {
+    background-color: var(--color-button-pressed);
+  }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
@@ -34,13 +51,16 @@
   }
 }
 
-@media screen and (min-width: 500px) and (max-width: 849px) {
+@media screen and (max-width: 849px) {
   .c-benefit-details {
     padding: 24px;
     gap: 16px;
+
+    &__button {
+      font-family: "Satoshi", sans-serif;
+    }
   }
 }
-
 @media screen and (max-width: 499px) {
   .c-benefit-details {
     padding: 24px 16px;

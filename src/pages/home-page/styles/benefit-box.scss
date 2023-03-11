@@ -34,9 +34,21 @@
   }
 }
 
-@media screen and (max-width: 849px) {
+@media screen and (min-width: 500px) and (max-width: 849px) {
   .c-benefit-box {
     width: 100%;
-    min-height: auto;
+    min-height: 312px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .c-benefit-box {
+    width: 100%;
+    min-height: 366px;
+    height: 100%;
+    
+    &:nth-child(3) {
+      min-height: 346px;
+    }
   }
 }

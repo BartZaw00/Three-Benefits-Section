@@ -6,24 +6,26 @@
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin: 180px 152px 174px 152px;
+  padding: 180px 152px 174px 152px;
 }
 
 @media screen and (min-width: 500px) and (max-width: 849px) {
   .c-section {
-    margin: 120px 41px 106px 41px;
+    padding: 120px 41px 106px 41px;
   }
 }
 
 @media screen and (max-width: 849px) {
   .c-section {
     flex-direction: column;
-    justify-content: baseline;
+    justify-content: flex-start;
   }
 }
 
 @media screen and (max-width: 499px) {
   .c-section {
-    margin: 21px 16px 20px;
+    box-sizing: border-box;
+    padding: 21px 16px 20px;
+    height: 100%;
   }
 }
